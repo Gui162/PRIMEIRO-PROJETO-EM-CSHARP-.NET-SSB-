@@ -1,4 +1,5 @@
 ﻿using SSB.Properties;
+using System.Windows.Forms;
 
 namespace SSB
 {
@@ -13,6 +14,15 @@ namespace SSB
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// 
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))

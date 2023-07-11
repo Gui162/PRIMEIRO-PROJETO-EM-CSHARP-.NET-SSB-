@@ -1,0 +1,15 @@
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\bin\Release\SSB.exe.config
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\bin\Release\SSB.exe
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\bin\Release\SSB.pdb
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.csproj.AssemblyReference.cache
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.csproj.SuggestedBindingRedirects.cache
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.Form1.resources
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.Form2.resources
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.Form3.resources
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.Form4.resources
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.Form5.resources
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.Properties.Resources.resources
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.csproj.GenerateResource.cache
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.csproj.CoreCompileInputs.cache
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.exe
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.pdb

@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace SSB
 {
+
     internal static class Program
     {
         /// <summary>

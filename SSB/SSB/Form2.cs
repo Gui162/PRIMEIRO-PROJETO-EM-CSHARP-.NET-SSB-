@@ -21,11 +21,19 @@ namespace SSB
         private void button1_Click_1(object sender, EventArgs e)
         {
             double n1, n2, frete;
-            n1 = Convert.ToDouble(textBox1.Text.Replace(".", ","));
-            n2 = Convert.ToDouble(textBox2.Text.Replace(".", ","));
-            frete = (n1 * (n2 / 1000));
-            frete = Math.Round(frete, 2);
-            label3.Text = $"R$:{frete}";
+            try
+            {
+                n1 = Convert.ToDouble(textBox1.Text.Replace(".", ","));
+                n2 = Convert.ToDouble(textBox2.Text.Replace(".", ","));
+                frete = (n1 * (n2 / 1000));
+                frete = Math.Round(frete, 2);
+                label3.Text = $"R$:{frete}";
+                label4.Text = "";
+            }
+            catch
+            {
+                label4.Text = "Ocorreu um erro!";
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -34,5 +42,6 @@ namespace SSB
             form1.Show();
             Close();
         }
+
     }
 }

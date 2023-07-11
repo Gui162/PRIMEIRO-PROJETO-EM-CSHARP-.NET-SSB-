@@ -11,3 +11,5 @@ C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.exe
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.pdb
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.Form1.resources
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.Form3.resources
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.Form4.resources
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.Form5.resources

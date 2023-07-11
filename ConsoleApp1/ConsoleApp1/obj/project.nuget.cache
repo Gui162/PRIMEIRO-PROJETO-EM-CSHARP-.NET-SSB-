@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ID8R7rtFjKGgXQRs6J9F1zVvuUP9INfmiJG9ElNUpYZsu2ivvky0LZ21xy/00ZDlFqpj1C0QFIfcA2I9WLWk+w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mti7v\\Desktop\\Csharp\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mti7v\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\Mti7v\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\Mti7v\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\Mti7v\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.19\\microsoft.netcore.app.host.win-x64.6.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}
