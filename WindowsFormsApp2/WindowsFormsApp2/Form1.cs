@@ -77,14 +77,28 @@ namespace WindowsFormsApp2
 
                     dataGridView1.Rows.Clear();
 
+                    // Crie a coluna de botão
+                    DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
+                    buttonColumn.HeaderText = "  "; // Texto exibido no cabeçalho da coluna
+                    buttonColumn.Name = "Editar"; // Nome da coluna
+                    buttonColumn.Text = "Editar"; // Texto exibido nos botões da célula
+                    buttonColumn.UseColumnTextForButtonValue = true; // Define o texto da célula como o texto do botão
+
+                    // Adicione a coluna ao DataGridView
+                    dataGridView1.Columns.Add(buttonColumn);
+
+                    // Manipule o evento de clique do botão
+
                     foreach (var get in getEntregas)
                     {
-                        if( get != null) { 
+                        if (get != null)
+                        {
                             dataGridView1.Rows.Add(
                                 get.ID,
                                 get.Fornecedor,
                                 get.Data,
                                 get.Observacao
+
                             );
                         }
                     }
@@ -135,6 +149,20 @@ namespace WindowsFormsApp2
         {
             dataGridView1.DataSource = null;
             LoadEntrega();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verifique se o clique ocorreu na última coluna
+            if (e.ColumnIndex == dataGridView1.Columns.Count - 1 && e.RowIndex >= 0)
+            {
+                // Obtém o valor da célula na coluna desejada
+                string valorCelula = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+
+                // Exibe o valor da célula em um MessageBox
+                MessageBox.Show(valorCelula, "Conteúdo da célula");
+
+            }
         }
     }
 }

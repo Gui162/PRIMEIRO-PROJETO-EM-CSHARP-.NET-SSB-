@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApp2
+﻿using System.Windows.Forms;
+
+namespace WindowsFormsApp2
 {
     partial class Form1
     {
@@ -34,7 +36,6 @@
             this.observacao = new System.Windows.Forms.TextBox();
             this.save = new System.Windows.Forms.Button();
             this.remove = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,7 +76,7 @@
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(72, 227);
+            this.save.Location = new System.Drawing.Point(23, 227);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(105, 57);
             this.save.TabIndex = 4;
@@ -85,7 +86,7 @@
             // 
             // remove
             // 
-            this.remove.Location = new System.Drawing.Point(72, 290);
+            this.remove.Location = new System.Drawing.Point(23, 290);
             this.remove.Name = "remove";
             this.remove.Size = new System.Drawing.Size(105, 57);
             this.remove.TabIndex = 5;
@@ -93,51 +94,54 @@
             this.remove.UseVisualStyleBackColor = true;
             this.remove.Click += new System.EventHandler(this.remove_Click);
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(12, 446);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(83, 20);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "remove list";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(300, 22);
+            this.dataGridView1.Location = new System.Drawing.Point(256, 22);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(478, 199);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(894, 554);
             this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "ID";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "FORNECEDOR";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 250;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "DATA";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 150;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "OBS";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 350;
             // 
             // load
             // 
-            this.load.Location = new System.Drawing.Point(72, 353);
+            this.load.Location = new System.Drawing.Point(23, 353);
             this.load.Name = "load";
             this.load.Size = new System.Drawing.Size(105, 57);
             this.load.TabIndex = 9;
@@ -149,10 +153,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 478);
+            this.ClientSize = new System.Drawing.Size(1171, 588);
             this.Controls.Add(this.load);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.remove);
             this.Controls.Add(this.save);
             this.Controls.Add(this.observacao);
@@ -176,13 +179,12 @@
         private System.Windows.Forms.TextBox observacao;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Button remove;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Button load;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
     }
 }
 
