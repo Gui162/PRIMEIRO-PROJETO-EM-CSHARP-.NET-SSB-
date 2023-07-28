@@ -24,3 +24,4 @@ C:\Users\Mti7v\Desktop\Csharp\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Window
 C:\Users\Mti7v\Desktop\Csharp\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 C:\Users\Mti7v\Desktop\Csharp\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\Mti7v\Desktop\Csharp\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Mti7v\Desktop\Csharp\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources

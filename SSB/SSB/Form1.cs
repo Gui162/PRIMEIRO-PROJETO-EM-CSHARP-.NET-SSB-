@@ -47,5 +47,12 @@ namespace SSB
             form5.Show(); // Exiba o formulário
             Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6(); // Crie uma instância do formulário desejado
+            form6.Show(); // Exiba o formulário
+            Hide();
+        }
     }
 }

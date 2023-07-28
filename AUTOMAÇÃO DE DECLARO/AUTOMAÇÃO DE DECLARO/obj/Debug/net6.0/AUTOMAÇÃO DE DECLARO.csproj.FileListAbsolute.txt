@@ -1,0 +1,17 @@
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\bin\Debug\net6.0\AUTOMAÇÃO DE DECLARO.exe
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\bin\Debug\net6.0\AUTOMAÇÃO DE DECLARO.deps.json
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\bin\Debug\net6.0\AUTOMAÇÃO DE DECLARO.runtimeconfig.json
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\bin\Debug\net6.0\AUTOMAÇÃO DE DECLARO.dll
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\bin\Debug\net6.0\AUTOMAÇÃO DE DECLARO.pdb
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\bin\Debug\net6.0\WindowsInput.dll
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\obj\Debug\net6.0\AUTOMAÇÃO DE DECLARO.csproj.AssemblyReference.cache
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\obj\Debug\net6.0\AUTOMAÇÃO DE DECLARO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\obj\Debug\net6.0\AUTOMAÇÃO DE DECLARO.AssemblyInfoInputs.cache
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\obj\Debug\net6.0\AUTOMAÇÃO DE DECLARO.AssemblyInfo.cs
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\obj\Debug\net6.0\AUTOMAÇÃO DE DECLARO.csproj.CoreCompileInputs.cache
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\obj\Debug\net6.0\AUTOMAÇÃO DE DECLARO.csproj.CopyComplete
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\obj\Debug\net6.0\AUTOMAÇÃO DE DECLARO.dll
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\obj\Debug\net6.0\refint\AUTOMAÇÃO DE DECLARO.dll
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\obj\Debug\net6.0\AUTOMAÇÃO DE DECLARO.pdb
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\obj\Debug\net6.0\AUTOMAÇÃO DE DECLARO.genruntimeconfig.cache
+C:\Users\Mti7v\Desktop\Csharp\AUTOMAÇÃO DE DECLARO\AUTOMAÇÃO DE DECLARO\obj\Debug\net6.0\ref\AUTOMAÇÃO DE DECLARO.dll

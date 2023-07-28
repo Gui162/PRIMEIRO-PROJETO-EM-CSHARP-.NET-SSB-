@@ -13,3 +13,7 @@ C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.csproj.GenerateResource.ca
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.csproj.CoreCompileInputs.cache
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.exe
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.pdb
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.Form6.resources
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\bin\Release\WindowsInput.dll
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\bin\Release\WindowsInput.xml
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Release\SSB.csproj.CopyComplete

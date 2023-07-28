@@ -37,11 +37,11 @@ namespace WindowsFormsApp2
             this.save = new System.Windows.Forms.Button();
             this.remove = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.load = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.load = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,7 +98,6 @@ namespace WindowsFormsApp2
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -108,9 +107,19 @@ namespace WindowsFormsApp2
             this.dataGridView1.Location = new System.Drawing.Point(256, 22);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(894, 554);
+            this.dataGridView1.Size = new System.Drawing.Size(1133, 554);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // load
+            // 
+            this.load.Location = new System.Drawing.Point(23, 353);
+            this.load.Name = "load";
+            this.load.Size = new System.Drawing.Size(105, 57);
+            this.load.TabIndex = 9;
+            this.load.Text = "load";
+            this.load.UseVisualStyleBackColor = true;
+            this.load.Click += new System.EventHandler(this.load_Click);
             // 
             // Column1
             // 
@@ -139,21 +148,11 @@ namespace WindowsFormsApp2
             this.Column4.ReadOnly = true;
             this.Column4.Width = 350;
             // 
-            // load
-            // 
-            this.load.Location = new System.Drawing.Point(23, 353);
-            this.load.Name = "load";
-            this.load.Size = new System.Drawing.Size(105, 57);
-            this.load.TabIndex = 9;
-            this.load.Text = "load";
-            this.load.UseVisualStyleBackColor = true;
-            this.load.Click += new System.EventHandler(this.load_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1171, 588);
+            this.ClientSize = new System.Drawing.Size(1401, 588);
             this.Controls.Add(this.load);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.remove);

@@ -14,11 +14,14 @@ using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
 using FireSharp.Exceptions;
+using Newtonsoft.Json.Linq;
 
 namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
+
+
         IFirebaseConfig config = new FirebaseConfig
         {
             AuthSecret = "qkLZIhfkFZWjUtXSjI61VBjTtb5D1aIQFOHIiXmG",
@@ -51,21 +54,12 @@ namespace WindowsFormsApp2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            try
-            {
-                client = new FireSharp.FirebaseClient(config);
-                if (client != null)
-                {
-                    MessageBox.Show("Connection Success");
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Connection Fail");
-            }
 
             LoadEntrega();
         }
+
+
+        // FUNCAO DE CARREGAR ENTREGA DATAGRID
         public void LoadEntrega()
         {
             try
@@ -73,61 +67,56 @@ namespace WindowsFormsApp2
                 FirebaseResponse response = client.Get("entrega");
                 if (response != null && response.Body != "null")
                 {
-                    List<Agendamentos> getEntregas = JsonConvert.DeserializeObject<List<Agendamentos>>(response.Body);
+                    JArray jsonArray = JArray.Parse(response.Body);
+                    Agendamentos datalist = jsonArray.ToObject<Agendamentos>();
 
                     dataGridView1.Rows.Clear();
 
-                    // Crie a coluna de botão
+                    /// CRIA A COLUNA DO BOTAO ETITAR
                     DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
                     buttonColumn.HeaderText = "  "; // Texto exibido no cabeçalho da coluna
-                    buttonColumn.Name = "Editar"; // Nome da coluna
-                    buttonColumn.Text = "Editar"; // Texto exibido nos botões da célula
+                    buttonColumn.Name = "Mais"; // Nome da coluna
+                    buttonColumn.Text = "Mais"; // Texto exibido nos botões da célula
                     buttonColumn.UseColumnTextForButtonValue = true; // Define o texto da célula como o texto do botão
+                    dataGridView1.Columns.Insert(0, buttonColumn);
 
-                    // Adicione a coluna ao DataGridView
-                    dataGridView1.Columns.Add(buttonColumn);
+                    // Restante do código...
 
                     // Manipule o evento de clique do botão
-
-                    foreach (var get in getEntregas)
+                    foreach (var get in datalist)
                     {
                         if (get != null)
                         {
                             dataGridView1.Rows.Add(
+                                get.nada,
                                 get.ID,
                                 get.Fornecedor,
                                 get.Data,
                                 get.Observacao
-
                             );
                         }
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Não foi possível obter as entregas.");
+                    MessageBox.Show("Não foi possível obter as entregas.");
+                    dataGridView1.Rows.Clear();
                 }
             }
             catch (JsonSerializationException ex)
             {
-                Console.WriteLine("Exceção de serialização/desserialização JSON:");
-                Console.WriteLine("Mensagem de erro: " + ex.Message);
-                Console.WriteLine("StackTrace: " + ex.StackTrace);
-
-                if (ex.InnerException is JsonReaderException readerException)
-                {
-                    Console.WriteLine("Exceção do leitor JSON:");
-                    Console.WriteLine("Mensagem de erro: " + readerException.Message);
-                    Console.WriteLine("Localização do erro: " + readerException.Path);
-                    Console.WriteLine("StackTrace: " + readerException.StackTrace);
-                }
+                MessageBox.Show(ex.Message);
+                MessageBox.Show("Não foi possível obter as entregas.");
             }
+
         }
 
+        // BOTAO DE SALVAR
         private void save_Click(object sender, EventArgs e)
         {
             Agendamentos agenda = new Agendamentos()
             {
+                nada = "mais",
                 ID = id.Text,
                 Fornecedor = forncedor.Text,
                 Data = data.Text,
@@ -138,6 +127,7 @@ namespace WindowsFormsApp2
             MessageBox.Show("Agendamento criado");
         }
 
+        // BOTAO DE REMOVER
         private void remove_Click(object sender, EventArgs e)
         {
             FirebaseResponse response = client.Delete("entrega/" + id.Text);
@@ -151,17 +141,47 @@ namespace WindowsFormsApp2
             LoadEntrega();
         }
 
+
+
+        // DETECTA DO CLICK NO BOTAO EDITAR
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Verifique se o clique ocorreu na última coluna
-            if (e.ColumnIndex == dataGridView1.Columns.Count - 1 && e.RowIndex >= 0)
+            // Verifique se o clique ocorreu na primeira coluna
+            if (e.ColumnIndex == 0)
             {
                 // Obtém o valor da célula na coluna desejada
                 string valorCelula = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
 
                 // Exibe o valor da célula em um MessageBox
-                MessageBox.Show(valorCelula, "Conteúdo da célula");
+                //MessageBox.Show(valorCelula, "Conteúdo da célula");
 
+                Form2 form2 = new Form2(); // Crie uma instância do formulário desejado
+                form2.Show(); // Exiba o formulário
+
+            }
+
+            // ACAO BOTÃO EXCLUIR
+
+            else if (e.RowIndex >= 0 && e.ColumnIndex == dataGridView1.Columns["Excluir"].Index)
+            {
+                // Obtenha o valor da célula da linha clicada
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                string value = row.Cells["Column1"].Value.ToString(); // Supondo que a coluna de ID tenha o nome "ID"
+
+                // Exemplo de confirmação de exclusão usando MessageBox
+                DialogResult result = MessageBox.Show("Deseja excluir Agendamento com ID " + value + "?", "Confirmação de Exclusão", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    // Lógica de exclusão aqui
+                    // ...
+                    // Atualize a exibição do DataGridView, removendo a linha excluída
+                    FirebaseResponse response = client.Delete("entrega/" + value);
+                    MessageBox.Show("Agendamento deletado");
+                    value = string.Empty;
+                    MessageBox.Show("foi excluido" +value);
+                    dataGridView1.Rows.RemoveAt(e.RowIndex);
+                }
             }
         }
     }

@@ -17,6 +17,10 @@ namespace SSB
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
             string numeros = textBox1.Text;
             string[] linhas = numeros.Split('\n');
 
@@ -30,9 +34,6 @@ namespace SSB
             }
             numerosString = string.Join(",", listacomvirgula);
 
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
             if (!string.IsNullOrWhiteSpace(numerosString))
             {
                 Clipboard.SetText(numerosString);
@@ -46,6 +47,16 @@ namespace SSB
             Form1 form1 = new Form1(); // Crie uma instância do formulário desejado
             form1.Show(); // Exiba o formulário
             Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

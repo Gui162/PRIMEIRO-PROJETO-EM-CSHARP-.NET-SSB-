@@ -67,6 +67,7 @@ namespace SSB
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 37);
             this.label1.TabIndex = 3;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -79,6 +80,7 @@ namespace SSB
             this.label2.Size = new System.Drawing.Size(124, 19);
             this.label2.TabIndex = 4;
             this.label2.Text = "Insira os codigos";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
