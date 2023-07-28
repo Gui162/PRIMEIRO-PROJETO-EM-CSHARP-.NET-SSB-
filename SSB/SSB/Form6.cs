@@ -30,9 +30,12 @@ namespace SSB
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-
+            await Task.Delay(100);
+            label1.Text = "Vai começar em 10s";
+            await Task.Delay(9900);
+            label1.Text = "Começou";
             // TRANSFORMANDO A STRING POR LINHAS E ADICIONANDO A LISTA
             string numeros = textBox1.Text;
             string[] linhas = numeros.Split('\n');
@@ -45,7 +48,7 @@ namespace SSB
                 }
             }
 
-            dormir();
+
             automacao();
         }
 
@@ -70,10 +73,10 @@ namespace SSB
         }
 
         // TIMER PARA INICIAR
-        public void dormir()
+        public async void dormir()
         {
             label1.Text = "Vai começar em 10s";
-            Thread.Sleep(10000);
+            await Task.Delay(9900);
             label1.Text = "Começou";
         }
 
