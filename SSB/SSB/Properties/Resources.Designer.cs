@@ -63,6 +63,16 @@ namespace SSB.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ajuda {
+            get {
+                object obj = ResourceManager.GetObject("ajuda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ajudando {
             get {
                 object obj = ResourceManager.GetObject("ajudando", resourceCulture);
@@ -106,6 +116,16 @@ namespace SSB.Properties {
         internal static System.Drawing.Bitmap voltar {
             get {
                 object obj = ResourceManager.GetObject("voltar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Webp_net_resizeimage {
+            get {
+                object obj = ResourceManager.GetObject("Webp.net-resizeimage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

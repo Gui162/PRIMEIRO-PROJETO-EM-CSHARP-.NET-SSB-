@@ -2,7 +2,6 @@ C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\bin\Debug\SSB.exe.config
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\bin\Debug\SSB.exe
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\bin\Debug\SSB.pdb
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.csproj.AssemblyReference.cache
-C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.csproj.SuggestedBindingRedirects.cache
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.Form2.resources
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.Properties.Resources.resources
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.csproj.GenerateResource.cache
@@ -13,3 +12,7 @@ C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.Form1.resources
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.Form3.resources
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.Form4.resources
 C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.Form5.resources
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\bin\Debug\WindowsInput.dll
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\bin\Debug\WindowsInput.xml
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.Form6.resources
+C:\Users\Mti7v\Desktop\Csharp\SSB\SSB\obj\Debug\SSB.csproj.CopyComplete

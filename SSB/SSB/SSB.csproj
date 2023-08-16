@@ -103,7 +103,6 @@
     <Compile Include="Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
-    <Compile Include="Load.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -162,6 +161,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icone-300x300.ico" />
+    <None Include="Resources\Webp.net-resizeimage.png" />
+    <None Include="Resources\ajuda.png" />
     <None Include="Resources\ajudando.png" />
   </ItemGroup>
   <ItemGroup>

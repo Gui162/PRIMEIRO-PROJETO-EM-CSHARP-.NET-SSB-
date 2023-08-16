@@ -124,6 +124,7 @@ namespace SSB
             this.MaximizeBox = false;
             this.Name = "Form3";
             this.Text = "CODIGOS COM VIRGULAS";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -123,6 +123,7 @@ namespace SSB
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "Form2";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

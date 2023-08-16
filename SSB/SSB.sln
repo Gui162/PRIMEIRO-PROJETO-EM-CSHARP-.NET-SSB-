@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSB", "SSB\SSB.csproj", "{304EDD27-1B39-4EAB-96AE-C4237C45879C}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SSB.Version1.0.0", "SSB.Version1.0.0\SSB.Version1.0.0.vdproj", "{B23C3C70-4548-43D1-8E0B-51F3DF33CE56}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SSB 1.02", "SSB 1.02\SSB 1.02.vdproj", "{824B57B0-60DA-4B63-82BA-5A8AD015597A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{304EDD27-1B39-4EAB-96AE-C4237C45879C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{304EDD27-1B39-4EAB-96AE-C4237C45879C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{304EDD27-1B39-4EAB-96AE-C4237C45879C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B23C3C70-4548-43D1-8E0B-51F3DF33CE56}.Debug|Any CPU.ActiveCfg = Debug
-		{B23C3C70-4548-43D1-8E0B-51F3DF33CE56}.Release|Any CPU.ActiveCfg = Release
+		{824B57B0-60DA-4B63-82BA-5A8AD015597A}.Debug|Any CPU.ActiveCfg = Debug
+		{824B57B0-60DA-4B63-82BA-5A8AD015597A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
