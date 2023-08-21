@@ -38,13 +38,21 @@ namespace SSB
 
 
 
-
-            private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();
             Close();
         }
 
+        private void Form2_KeyDown(object sender, KeyEventArgs e)
+        {
+            label5.Text = Convert.ToString(e.KeyValue);
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs a)
+        {
+            label5.Text = Convert.ToString(a.KeyChar);
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace SSB
     public partial class Form6 : Form
     {
 
+
         // DECLARAÇÃO DE VARIAVEIS :
         InputSimulator inputSimulator = new InputSimulator();
         List<string> listapreco = new List<string>();
@@ -28,14 +29,6 @@ namespace SSB
             // POSICAO DA TELA
             StartPosition = FormStartPosition.Manual;
             Location = new Point(540, 290);
-
-            // EVENTO DOS PLACE HOLDERS
-
-            textBox1.Enter += textBox1_Enter; // PARA FAZER A ENTRADA DO PLACE HOLDER NO CAMPO DE CODIGO
-            textBox1.Leave += textBox1_Leave; // PARA FAZER A SAIDA DO PLACE HOLDER NO CAMPO DE CODIGO
-            textBox2.Enter += textBox2_Enter; // PARA FAZER A ENTRADA DO PLACE HOLDER NO CAMPO DE CODIGO
-            textBox2.Leave += textBox2_Leave; // PARA FAZER A SAIDA DO PLACE HOLDER NO CAMPO DE CODIGO
-
             InitializeComponent();
 
         }
@@ -76,7 +69,6 @@ namespace SSB
         }
 
 
-
         // BOTAO DE VOLTAR
         private void button2_Click(object sender, EventArgs e)
         {
@@ -84,6 +76,7 @@ namespace SSB
             form1.Show(); // Exiba o formulário
             Close();
         }
+
 
         // TRANSFORMANDO A STRING POR LINHAS E ADICIONANDO A LISTA
         public void lista()
@@ -101,6 +94,7 @@ namespace SSB
             }
 
         }
+
 
         // AUTOMAÇÃO
         public void automacao()
@@ -140,6 +134,7 @@ namespace SSB
  
         }
 
+
         // TIMER PARA INICIAR
         public async void dormir()
         {
@@ -147,8 +142,6 @@ namespace SSB
             await Task.Delay(9900);
             label1.Text = "Começou";
         }
-
-
 
 
         // BOTAO DE AJUDA REFERENTE AO VIDEO DE AUTOMAÇÃO
@@ -163,60 +156,6 @@ namespace SSB
             string target = "https://www.youtube.com/watch?v=TLZb_7p7unU";
             System.Diagnostics.Process.Start(target);
         }
-
-
-
-        // FAZENDO OS PLACE HOLDER  (TEM COISA NA INICIALIZAÇÃO TAMBEM)
-
-        //---------------------------PLACE HOLDER CAMPO CODIGO -----------------------------------------
-
-        //  VERIFICA A HORA QUE VC CLICOU E RETIRA O TEXTO QUE TINHA E MUDA A COR PARA PADRAO
-        private void textBox1_Enter(object sender, EventArgs e)
-        {
-            if (textBox1.Text == "Digite os codigos aqui")
-            {
-                textBox1.Text = "";
-                textBox1.ForeColor = SystemColors.ControlText; // Volta à cor padrão do texto
-            }
-        }
-
-        //  VERIFICA A HORA QUE VC SAI DO CAMPO E VALIDA SE O CAMPO ESTIVER VAZIO
-        //  PARA COLOCAR O TEXTO E MUDAR A COR PARA CINZA
-        private void textBox1_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox1.Text))
-            {
-                textBox1.Text = "Digite os codigos aqui";
-                textBox1.ForeColor = SystemColors.GrayText; // Altera a cor do texto para cinza claro
-            }
-        }
-        //-----------------------------------------------------------------------------------------------
-
-        //---------------------------PLACE HOLDER CAMPO CODIGO -----------------------------------------
-
-        //  VERIFICA A HORA QUE VC CLICOU E RETIRA O TEXTO QUE TINHA E MUDA A COR PARA PADRAO
-        private void textBox2_Enter(object sender, EventArgs e)
-        {
-            if (textBox1.Text == "QTD REPETICAO")
-            {
-                textBox1.Text = "";
-                textBox1.ForeColor = SystemColors.ControlText; // Volta à cor padrão do texto
-            }
-        }
-
-        //  VERIFICA A HORA QUE VC SAI DO CAMPO E VALIDA SE O CAMPO ESTIVER VAZIO
-        //  PARA COLOCAR O TEXTO E MUDAR A COR PARA CINZA
-        private void textBox2_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox2.Text))
-            {
-                textBox2.Text = "QTD REPETICAO";
-                textBox2.ForeColor = SystemColors.GrayText; // Altera a cor do texto para cinza claro
-            }
-        }
-        //-----------------------------------------------------------------------------------------------
-
-
     }
 }
 
