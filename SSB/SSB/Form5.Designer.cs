@@ -175,6 +175,7 @@ namespace SSB
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
             this.Text = "ATACAREJO";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

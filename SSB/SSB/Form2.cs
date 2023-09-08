@@ -45,14 +45,5 @@ namespace SSB
             Close();
         }
 
-        private void Form2_KeyDown(object sender, KeyEventArgs e)
-        {
-            label5.Text = Convert.ToString(e.KeyValue);
-        }
-
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs a)
-        {
-            label5.Text = Convert.ToString(a.KeyChar);
-        }
     }
 }
