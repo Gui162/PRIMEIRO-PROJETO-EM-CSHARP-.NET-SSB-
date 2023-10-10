@@ -2,7 +2,7 @@
 
 Ao estudar .NET, tive a iniciativa de começar um novo projeto para aplicar todos os conhecimentos adquiridos durante o curso. Este foi o primeiro projeto que criei em C#. Portanto, se houver algo a ser melhorado (com certeza há, rs), ficarei agradecido em receber um PULL REQUEST seu. O projeto é uma junção de todos os scripts que já havia desenvolvido anteriormente para auxiliar no meu trabalho como assistente administrativo em uma loja de materiais de construção. A diferença é que desta vez, tudo foi feito em C# e com uma interface gráfica em vez de vários scripts em Python executados apenas pelo CMD.
 
-(O PROGRAMA FOI DESEMVOLVIDO UNICA E EXCLUSIVAMENTE POR MIM FORA DO HORARIO DE TRABALHO, APENAS PARA FINS DE ESTUDOS MAS AJUDANDO TODOS OS MEUS COLEGAS, PROGRAMA DE TOTAL AUTORIA MINHA.)
+(O PROGRAMA FOI DESENVOLVIDO UNICA E EXCLUSIVAMENTE POR MIM FORA DO HORARIO DE TRABALHO, APENAS PARA FINS DE ESTUDOS MAS AJUDANDO TODOS OS MEUS COLEGAS, PROGRAMA DE TOTAL AUTORIA MINHA.)
 
 O programa possui várias telas, incluindo:
 
